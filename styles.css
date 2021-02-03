@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: #212123;
+}
+
+.ball {
+  border-radius: 50%;
+  height: 94px;
+  width: 94px;
+  background-color: #DB4747;
+  position: absolute;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  position: fixed;
+  width: 30%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  right: -29%;
+  top: 20%;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1rem 0.75rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  z-index: 50;
+  color: #ffffff;
+}
+
+nav .active::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  bottom: -10%;
+  right: 50%;
+}
+
+section {
+  position: relative;
+  margin: 10% auto;
+}
+
+section header h1 {
+  font-family: 'Playfair Display';
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 110%;
+  font-size: 6.875rem;
+}
+
+section header .section-number {
+  position: absolute;
+  font-size: 6.25rem;
+  color: #ffffff;
+  opacity: 20%;
+  font-weight: 200;
+}
+
+section header .header-pre {
+  color: #ffffff;
+  line-height: 24px;
+}
+
+section .see-works {
+  color: #DB4747;
+  text-decoration: none;
+}
+
+section .see-works:hover {
+  text-decoration: underline;
+}
+
+section .main {
+  color: #ffffff;
+  max-width: 80%;
+}
+
+.small-line {
+  background-color: #ffffff;
+  width: 4rem;
+  height: 1px;
+}
+
+.intro {
+  max-width: 800px;
+}
+
+.intro .ball {
+  top: 15%;
+  right: 40%;
+}
+
+.intro header .section-number {
+  top: -22%;
+  left: -12%;
+}
+
+.intro .see-works {
+  margin-right: 1.63rem;
+}
+
+.intro .see-works:hover {
+  text-decoration: underline;
+}
+
+.intro .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.intro .cta a {
+  text-decoration: none;
+}
+
+.intro .cta .socials-holder {
+  margin: 0.75rem 0 0 2rem;
+}
+
+.intro .cta a img {
+  height: 32px;
+  width: 32px;
+}
+
+.portfolio {
+  width: 95vw;
+  max-width: 1600px;
+}
+
+.portfolio header {
+  position: relative;
+  width: 75vw;
+  margin: 0 auto;
+}
+
+.portfolio header .section-number {
+  top: -20%;
+  left: -12%;
+}
+
+.about-section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about {
+  width: 40vw;
+  max-width: 500px;
+}
+
+.about header {
+  position: relative;
+}
+
+.about header .section-number {
+  top: -80%;
+}
+
+.about a.see-works {
+  width: 32%;
+}
+
+.cards-holder {
+  width: 50vw;
+  max-width: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 16px;
+}
+
+.card {
+  height: 245px;
+  width: 245px;
+  border-radius: 4px;
+  margin-left: 2rem;
+  padding: 0.75rem;
+  -webkit-box-shadow: 0px 2px 8px 6px rgba(0, 0, 0, 0.26);
+          box-shadow: 0px 2px 8px 6px rgba(0, 0, 0, 0.26);
+}
+
+.card .card-header {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.card .card-points {
+  list-style: circle;
+  color: #7d7c84;
+  margin-left: 1rem;
+}
+
+.contact {
+  width: 50vw;
+  max-width: 900px;
+}
+
+.contact header .section-number {
+  top: -20%;
+  left: -18%;
+}
+
+.contact .main {
+  margin-top: 1.5rem;
+}
+
+.contact .ball {
+  top: -2%;
+  right: 2%;
+}
+
+.form-holder {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.form-holder .smart-input, .form-holder .smart-input input, .form-holder .smart-input label {
+  height: 3.5rem;
+  border-radius: 4px;
+}
+
+.form-holder .smart-input {
+  margin-bottom: 1rem;
+  position: relative;
+  color: white;
+}
+
+.form-holder .smart-input input, .form-holder .smart-input textarea {
+  background-color: #101010;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding-left: 10px;
+  border: none;
+}
+
+.form-holder .smart-input input:focus + label .label-content,
+.form-holder .smart-input input:valid + label .label-content,
+.form-holder .smart-input input.filled + label .label-content, .form-holder .smart-input textarea:focus + label .label-content,
+.form-holder .smart-input textarea:valid + label .label-content,
+.form-holder .smart-input textarea.filled + label .label-content {
+  -webkit-transform: translate(-10%, -50%) scale(0.8, 0.8);
+          transform: translate(-10%, -50%) scale(0.8, 0.8);
+}
+
+.form-holder .smart-input input:focus, .form-holder .smart-input textarea:focus {
+  outline: 1px solid #DB4747;
+}
+
+.form-holder .smart-input textarea {
+  height: 8rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+}
+
+.form-holder .smart-input textarea::-webkit-input-placeholder {
+  font-size: 1rem;
+}
+
+.form-holder .smart-input textarea:-ms-input-placeholder {
+  font-size: 1rem;
+}
+
+.form-holder .smart-input textarea::-ms-input-placeholder {
+  font-size: 1rem;
+}
+
+.form-holder .smart-input textarea::placeholder {
+  font-size: 1rem;
+}
+
+.form-holder .smart-input label {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  font-size: 16px;
+  color: #7D7C84;
+  border-bottom: 1px solid black;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.form-holder .smart-input label .label-content {
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+  position: absolute;
+  top: 25%;
+}
+
+.form-holder button {
+  margin-top: 4rem;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #DB4747;
+  border: none;
+  height: 2.2rem;
+  color: white;
+}
+
+.form-holder button:focus {
+  -webkit-box-shadow: 6px 8px 20px black;
+          box-shadow: 6px 8px 20px black;
+  outline: none;
+}
+
+footer {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+footer .cta {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .cta .socials-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 20%;
+}
+
+a.see-works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #DB4747;
+}
+
+a.see-works .footer-link-img {
+  height: 24px !important;
+  width: 24px !important;
+}
+
+.project-card {
+  width: 95vw;
+  max-width: 1200px;
+  padding: 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem auto;
+  -webkit-box-shadow: 6px 6px 24px #131313;
+          box-shadow: 6px 6px 24px #131313;
+  border-radius: 8px;
+}
+
+.project-card .project-image {
+  width: 60%;
+  max-width: 800px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 2rem;
+  padding: 10px 16px;
+  background-color: #DB4747;
+}
+
+.project-card .project-image img {
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+}
+
+.project-card .project-description {
+  width: 40%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project-card .project-description .project-about {
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
+}
+
+.project-card .project-tag {
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: #101010;
+}
+
+.project-card .project-header {
+  font-size: 1.5rem;
+}
+
+.project-card .project-header h2 {
+  font-family: 'Playfair Display';
+  letter-spacing: 0.2rem;
+}
+
+.project-card .project-cta {
+  height: 4rem;
+}
+
+.project-card .project-cta a {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: #DB4747;
+  background-color: #101010;
+  -webkit-transition: -webkit-box-shadow 0.1s ease,-webkit-transform 0.2s ease-in;
+  transition: -webkit-box-shadow 0.1s ease,-webkit-transform 0.2s ease-in;
+  transition: box-shadow 0.1s ease,transform 0.2s ease-in;
+  transition: box-shadow 0.1s ease,transform 0.2s ease-in,-webkit-box-shadow 0.1s ease,-webkit-transform 0.2s ease-in;
+}
+
+.project-card .project-cta a:hover {
+  -webkit-box-shadow: 4px 4px 25px #4b4b4b;
+          box-shadow: 4px 4px 25px #4b4b4b;
+  -webkit-transform: translateY(-2px) scale(1.05, 1.05);
+          transform: translateY(-2px) scale(1.05, 1.05);
+}
+
+.project-card.p2 .project-image {
+  background-color: #4bffa5;
+}
+/*# sourceMappingURL=styles.css.map */
