@@ -193,5 +193,40 @@ display: flex;
         margin-left: 1rem;
     }
 }
+.contact{
+    width: 50vw;
+    max-width:900px;
+    header {
+        .section-number{
+            top: -20%;
+            left:-18%;
+        }
+    }   
+    .main{
+        margin-top: 1.5rem;
+    }
+    .ball{
+        top: -2%;
+        right: 2%;
+    }
+}
+.form-holder{
+    width: 100%;
+    .smart-input,.smart-input input,.smart-input label{
+        width: 80%;
+        height: 2.5rem;
+        padding: 0.5rem 0.75rem;
+    }
+    .smart-input{
+        position: relative;
+    }
+    .smart-input label{
+        padding: 0.5rem 0.75rem;
+        color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
 
 
