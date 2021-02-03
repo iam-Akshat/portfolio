@@ -166,6 +166,9 @@ display: flex;
             top: -80%;
         }
     }
+    a.see-works{
+        width: 32%;
+    }
 }
 .cards-holder{
     width: 50vw;
@@ -281,5 +284,27 @@ display: flex;
        }
    }
 }
-
+footer {
+    margin: 0 auto;
+    .cta{
+        justify-content: space-between;
+        .socials-holder{
+            display: flex;
+            justify-content: space-evenly;
+            width: 20%;
+        }
+    }
+    margin-bottom: 2rem;
+}
+a.see-works{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    justify-content: space-between;
+    color: #DB4747;
+    .footer-link-img{
+        height: 24px !important;
+        width: 24px !important;
+    }
+}
 
