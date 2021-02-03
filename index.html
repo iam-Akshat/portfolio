@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="./main.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <title>Akshat Sethi</title>
@@ -181,24 +182,24 @@
         <div class="main">
             Hello! I am a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate and contact me.
             <div class="form-holder">
-                <div class="smart-input">
-                    <input type="text" name="name" id="name" required>
-                    <label for="name"> 
-                        <span class="label-content">Your name</span>
-                    </label>
-                </div>
-                <div class="smart-input">
-                    <input type="email" name="email" id="email" required>
-                    <label for="email"> 
-                        <span class="label-content">An email would be nice</span>
-                    </label>
-                </div>
-                <div class="smart-input">
-                    <textarea name="body" id="body" cols="30" rows="5"></textarea>
-                    <label for="body"> 
-                        <span class="label-content">Hi, how are ya?</span>
-                    </label>
-                </div>
+                <form action="" autocomplete="false"> 
+                    <div class="smart-input">
+                        <input type="text" autocomplete="false" name="name" id="name" required>
+                        <label for="name"> 
+                            <span class="label-content">Your name</span>
+                        </label>
+                    </div>
+                    <div class="smart-input">
+                        <input type="email" autocomplete="false" name="email" id="email" required>
+                        <label for="email"> 
+                            <span class="label-content">and email</span>
+                        </label>
+                    </div>
+                    <div class="smart-input">
+                        <textarea name="body" id="body" cols="30" rows="5" placeholder="How are ya?"></textarea>
+                    </div>
+                    <button type="submit">Say Hi</button>
+                </form>
             </div>
         </div>
         <div class="ball"></div>
