@@ -402,7 +402,7 @@ a.see-works .footer-link-img {
   border-radius: 8px;
 }
 
-.project-card .project-image {
+.project-card .p-image {
   width: 60%;
   max-width: 800px;
   height: 400px;
@@ -413,13 +413,13 @@ a.see-works .footer-link-img {
   background-color: #DB4747;
 }
 
-.project-card .project-image img {
+.project-card .p-image img {
   border-radius: 6px;
   width: 100%;
   height: 100%;
 }
 
-.project-card .project-description {
+.project-card .p-description {
   width: 40%;
   height: 400px;
   display: -webkit-box;
@@ -434,32 +434,32 @@ a.see-works .footer-link-img {
           justify-content: space-between;
 }
 
-.project-card .project-description .project-about {
+.project-card .p-description .p-about {
   line-height: 1.5rem;
   letter-spacing: 0.1rem;
   font-size: 1.3rem;
 }
 
-.project-card .project-tag {
+.project-card .p-tag {
   padding: 0.5rem;
   border-radius: 10px;
   background-color: #101010;
 }
 
-.project-card .project-header {
+.project-card .p-header {
   font-size: 1.5rem;
 }
 
-.project-card .project-header h2 {
+.project-card .p-header h2 {
   font-family: 'Playfair Display';
   letter-spacing: 0.2rem;
 }
 
-.project-card .project-cta {
+.project-card .p-cta {
   height: 4rem;
 }
 
-.project-card .project-cta a {
+.project-card .p-cta a {
   display: inline-block;
   padding: 1rem 1.5rem;
   text-decoration: none;
@@ -471,14 +471,14 @@ a.see-works .footer-link-img {
   transition: box-shadow 0.1s ease,transform 0.2s ease-in,-webkit-box-shadow 0.1s ease,-webkit-transform 0.2s ease-in;
 }
 
-.project-card .project-cta a:hover {
+.project-card .p-cta a:hover {
   -webkit-box-shadow: 4px 4px 25px #4b4b4b;
           box-shadow: 4px 4px 25px #4b4b4b;
   -webkit-transform: translateY(-2px) scale(1.05, 1.05);
           transform: translateY(-2px) scale(1.05, 1.05);
 }
 
-.project-card.p2 .project-image {
+.project-card.p2 .p-image {
   background-color: #4bffa5;
 }
 /*# sourceMappingURL=styles.css.map */

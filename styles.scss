@@ -317,7 +317,7 @@ a.see-works{
     margin: 2rem auto;
     box-shadow: 6px 6px 24px rgb(19, 19, 19);
     border-radius: 8px;
-    .project-image{
+    .p-image{
         width: 60%;
         max-width: 800px;
         height: 400px;
@@ -331,31 +331,31 @@ a.see-works{
             height: 100%;
         }
     }
-    .project-description{
+    .p-description{
         width: 40%;
         height: 400px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        .project-about{
+        .p-about{
             line-height: 1.5rem;
             letter-spacing: 0.1rem;
             font-size: 1.3rem;
         }
     }
-    .project-tag{
+    .p-tag{
         padding: 0.5rem;
         border-radius: 10px;
         background-color: #101010;
     }
-    .project-header{
+    .p-header{
         font-size: 1.5rem;
         h2{
             font-family: 'Playfair Display' ;
             letter-spacing: 0.2rem;
         }
     }
-    .project-cta{
+    .p-cta{
         height: 4rem;
         a{  display: inline-block;
             padding: 1rem 1.5rem;
@@ -369,7 +369,7 @@ a.see-works{
             }
         }
     }
-&.p2 .project-image{
+&.p2 .p-image{
     background-color: #4bffa5;
 }
 }
