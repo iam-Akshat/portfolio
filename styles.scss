@@ -74,6 +74,7 @@ nav{
 }
 section{
     position: relative;
+    z-index: -50;
     margin: 10% auto;
     header {
         h1{ 
@@ -381,6 +382,49 @@ a.see-works{
 }
 
 @media screen and (max-width:900px){
+    .active::after{
+        display: none;
+    }
+    .open{
+        transform: translateX(0);
+    }
+    nav{
+        transform: rotate(0deg);
+        display: flex;
+        width: 100%;
+        top: 16px;
+        right: 0px;
+        ul{
+            right: 0;
+            z-index: 5000;
+            position: absolute;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 50%;
+            height: 100vh;
+            transform: translateX(100%);
+            transition: 0.2s transform ease-in;
+            background-color: #101010;
+        }
+    }
+    .burger{
+        margin-left: 90%;
+        align-self: flex-end;
+        height: 40px;
+        width: 32px;
+        position: relative;
+        z-index: 5001;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .line{
+            width: 100%;
+            height: 4px;
+            background-color: #ffffff;
+            transition: transform 0.1s ease-in-out;
+        }
+    }
     section{
         padding: 0.25rem 1rem;
         header {
@@ -419,9 +463,6 @@ a.see-works{
         justify-content: center;
         align-items: center;
         // padding: 2rem;
-    }
-    nav ul {
-        display: none;
     }
     .about-section-container{
         display: flex;
