@@ -9,6 +9,8 @@
 body {
   position: relative;
   background-color: #212123;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .ball {
@@ -609,6 +611,37 @@ a.see-works .footer-link-img {
   }
   .about {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .project-card .p-image {
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1050px) {
+  .cards-holder {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .about {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .card {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .project-card .p-description .p-tag {
+    font-size: 0.8rem;
+  }
+  .project-card .p-description .p-cta a {
+    padding: 0.45rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

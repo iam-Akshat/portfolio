@@ -9,6 +9,8 @@ body{
     // background-size: 402.00px 402.00px;
     position: relative;
     background-color: #212123;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 .ball{
     border-radius: 50%;
@@ -465,5 +467,38 @@ a.see-works{
     }
     .about{
         width: 100%;
+    }
+}
+
+@media screen and (min-width:600px){
+    .project-card{
+        .p-image{
+            height: 350px;
+        }
+    }   
+}
+@media screen and(min-width:900px) and (max-width:1050px){
+    .cards-holder{
+        width: min-content;
+    }
+    .about{
+        width: min-content;
+    }
+    .card{
+        width:  auto;
+    }
+}
+@media screen and (max-width:321px){
+    .project-card{
+        .p-description{
+            .p-tag{
+                font-size: 0.8rem;
+            }
+            .p-cta{
+                a{
+                    padding: 0.45rem;
+                }
+            }
+        }
     }
 }
