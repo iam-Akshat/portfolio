@@ -12,6 +12,10 @@ body{
     max-width: 1600px;
     margin: 0 auto;
 }
+a {
+    pointer-events: auto !important;  
+    cursor: pointer !important;
+ }
 .ball{
     border-radius: 50%;
     height: 94px;
