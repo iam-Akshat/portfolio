@@ -12,10 +12,9 @@ body{
     max-width: 1600px;
     margin: 0 auto;
 }
-a {
-    pointer-events: auto !important;  
-    cursor: pointer !important;
- }
+html{
+    scroll-behavior: smooth;
+}
 .ball{
     border-radius: 50%;
     height: 94px;
@@ -30,6 +29,7 @@ nav{
     
     position: fixed;
     width:30%;
+    z-index: 2000;
     transform-origin: 0 0;
     transform: rotate(90deg);
     right: -29%; 
@@ -70,11 +70,22 @@ nav{
         border-radius: 50%;
         bottom: -10%;
         right: 50%;
+        animation: link-down 0.1s ease-in;
+    }
+}
+@keyframes link-down {
+    0%{
+        right:0%;
+        opacity:0%
+    }
+    100%{
+        right:50%;
+        opacity:100%
     }
 }
 section{
     position: relative;
-    z-index: -50;
+    z-index: 400;
     margin: 10% auto;
     header {
         h1{ 
@@ -367,6 +378,8 @@ a.see-works{
         a{  display: inline-block;
             padding: 1rem 1.5rem;
             text-decoration: none;
+            position: relative;
+            z-index: 50000;
             color: #DB4747;
             background-color: #101010;
             transition: box-shadow 0.1s ease,transform 0.2s ease-in;

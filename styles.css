@@ -13,9 +13,8 @@ body {
   margin: 0 auto;
 }
 
-a {
-  pointer-events: auto !important;
-  cursor: pointer !important;
+html {
+  scroll-behavior: smooth;
 }
 
 .ball {
@@ -33,6 +32,7 @@ ul {
 nav {
   position: fixed;
   width: 30%;
+  z-index: 2000;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   -webkit-transform: rotate(90deg);
@@ -73,11 +73,35 @@ nav .active::after {
   border-radius: 50%;
   bottom: -10%;
   right: 50%;
+  -webkit-animation: link-down 0.1s ease-in;
+          animation: link-down 0.1s ease-in;
+}
+
+@-webkit-keyframes link-down {
+  0% {
+    right: 0%;
+    opacity: 0%;
+  }
+  100% {
+    right: 50%;
+    opacity: 100%;
+  }
+}
+
+@keyframes link-down {
+  0% {
+    right: 0%;
+    opacity: 0%;
+  }
+  100% {
+    right: 50%;
+    opacity: 100%;
+  }
 }
 
 section {
   position: relative;
-  z-index: -50;
+  z-index: 400;
   margin: 10% auto;
 }
 
@@ -471,6 +495,8 @@ a.see-works .footer-link-img {
   display: inline-block;
   padding: 1rem 1.5rem;
   text-decoration: none;
+  position: relative;
+  z-index: 50000;
   color: #DB4747;
   background-color: #101010;
   -webkit-transition: -webkit-box-shadow 0.1s ease,-webkit-transform 0.2s ease-in;
