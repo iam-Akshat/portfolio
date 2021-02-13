@@ -442,7 +442,6 @@ a.see-works .footer-link-img {
      object-fit: cover;
   margin-right: 2rem;
   padding: 10px 16px;
-  background-color: #DB4747;
 }
 
 .project-card .p-image img {
@@ -510,10 +509,6 @@ a.see-works .footer-link-img {
           box-shadow: 4px 4px 25px #4b4b4b;
   -webkit-transform: translateY(-2px) scale(1.05, 1.05);
           transform: translateY(-2px) scale(1.05, 1.05);
-}
-
-.project-card.p2 .p-image {
-  background-color: #4bffa5;
 }
 
 @media screen and (max-width: 900px) {

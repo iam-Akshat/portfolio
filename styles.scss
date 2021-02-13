@@ -342,7 +342,6 @@ a.see-works{
         object-fit: cover;
         margin-right: 2rem;
         padding: 10px 16px;
-        background-color: #DB4747;
         img{
             border-radius: 6px;
             width: 100%;
@@ -389,9 +388,6 @@ a.see-works{
             }
         }
     }
-&.p2 .p-image{
-    background-color: #4bffa5;
-}
 }
 
 @media screen and (max-width:900px){
