@@ -523,6 +523,22 @@ a.see-works .footer-link-img {
           transform: translateY(-2px) scale(1.05, 1.05);
 }
 
+.project-card .multi-img-holder {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.project-card .multi-img-holder img {
+  height: auto;
+  width: 100%;
+  max-width: 200px;
+}
+
 @media screen and (max-width: 900px) {
   .active::after {
     display: none;
@@ -715,8 +731,24 @@ a.see-works .footer-link-img {
   .project-card .p-description .p-header {
     font-size: 1.25rem;
   }
+  .project-card .multi-img-holder {
+    width: 100%;
+  }
+  .project-card .multi-img-holder img {
+    max-width: 200px;
+    width: 100%;
+  }
   .about {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .multi-img-holder {
+    width: 100%;
+  }
+  .multi-img-holder img:nth-of-type(1) {
+    display: none;
   }
 }
 
